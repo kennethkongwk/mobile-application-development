@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextTolBill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Total Bill Amount"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editTextTolPeople"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextTolBill"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Total Number of People"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextP1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextTolPeople"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Individual Amount for Person 1"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editTextP2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextP1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Individual Amount for Person 2"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editTextP3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextP2"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Individual Amount for Person 3"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editTextP4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextP3"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Individual Amount for Person 4"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnCalAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextP4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Calculate and Verify"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnCalAmt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btnHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reset"
+                android:layout_centerHorizontal="true"
+                android:text="History"
+                android:layout_marginLeft="15dp"/>
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvResult"
+                android:layout_centerHorizontal="true"
+                android:text="CLEAR"
+                android:layout_marginLeft="200dp"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnRtnMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnHistory"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Return to Main" />
+
+    </LinearLayout>
+</ScrollView>
